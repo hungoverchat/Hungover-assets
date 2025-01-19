@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Load Tracking</title>
-
+    <title>Image Tracking with Google Analytics</title>
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HN62KY34G"></script>
     <script>
@@ -13,11 +13,14 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', 'G-2HN62KY34G'); // Remplacez par votre propre ID GA4
+        gtag('config', 'G-2HN62KY34G'); // Votre ID de suivi GA4
     </script>
 </head>
 <body>
-    <h1>Image Loading Test</h1>
+    <h1>Image Loading Tracking Test</h1>
+    <p>Cette page suit le chargement de l'image dans Google Analytics.</p>
+
+    <!-- Image avec suivi d'événement -->
     <img src="https://drive.google.com/uc?export=download&id=1AEJkfA4uWFR-1B0H3qYsgi7IvD-yNA0r" 
          alt="Document Image"
          onload="gtag('event', 'image_loaded', {
