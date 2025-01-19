@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HN62KY34G"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-2HN62KY34G'); // Remplacez par votre ID de mesure GA4
-
-        // Suivre l'événement de chargement de l'image
-        gtag('event', 'image_loaded', {
-            'event_category': 'Image Load',
-            'event_label': 'Document Image',
-            'value': 1
-        });
-
-         window.onload = function() {
-            // Rediriger vers l'URL de téléchargement direct
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection vers le téléchargement</title>
+    <script type="text/javascript">
+        // Redirection automatique à l'ouverture de la page
+        window.onload = function() {
             window.location.href = "https://drive.google.com/uc?export=download&id=1AEJkfA4uWFR-1B0H3qYsgi7IvD-yNA0r";
         };
-        
     </script>
 </head>
 <body>
-    <img src="https://drive.google.com/uc?export=download&id=1AEJkfA4uWFR-1B0H3qYsgi7IvD-yNA0r" alt="Document Image">
+    <!-- Optionnel : Message indiquant que la page redirige -->
+    <p>Si la redirection ne se produit pas, cliquez <a href="https://drive.google.com/uc?export=download&id=1AEJkfA4uWFR-1B0H3qYsgi7IvD-yNA0r">ici</a>.</p>
 </body>
 </html>
-
